@@ -1,19 +1,19 @@
 package YouDoIt;
 
 public class HighLow {
-    public static void displayHighLow(int[] arr)
+    public static void displayHighLow(int[] scoresArray)
     {
         int high = 0;
         int low = 100;
-        for(int j = 0; j < arr.length; j++)
+        for(int j = 0; j < scoresArray.length; j++)
         {
-            if (arr[j] > high)
+            if (scoresArray[j] > high)
             {
-                high = arr[j];
+                high = scoresArray[j];
             }
-            else if(arr[j] < low)
+            else if(scoresArray[j] < low)
             {
-                low = arr[j];
+                low = scoresArray[j];
             }
         }
         System.out.println("The high is " + high + ". The low is " + low + ".");
