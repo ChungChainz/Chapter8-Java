@@ -2,38 +2,46 @@ package exercises;
 
 import java.util.Scanner;
 
+import static java.lang.Math.abs;
+
 public class DistanceFromAverage {
     public static void main(String[] args)
     {
         double values;
-        double loops;
         double total = 0;
-        double counter = 1;
+        int counter = 0;
         double avg;
         double difference;
+        boolean quit = true;
         double[] numArray = new double[20];
 
         Scanner input = new Scanner(System.in);
-        System.out.println("How many values are you entering? (Up to 20)");
-        loops = input.nextDouble();
-        if(loops <= 20) {
-                for (int i = 0; i < loops; ++i) {
-                    System.out.println("Enter your value " + (i + 1) + " here (up to 20) >>>");
-                    values = input.nextDouble();
-                    numArray[i] = values;
-                }
-                for (int j = 0; j < loops; ++j) {
-                    total = total + numArray[j];
-                    avg = total / counter;
-                    difference = numArray[j] - avg;
-                    ++counter;
-                    System.out.println("The entered number is " + numArray[j] + ", it is "
-                            + difference + " away from the average of " + avg);
-                }
+        while (quit) {
+
+            System.out.println("Enter your value here (up to 20) >>>");
+            values = input.nextDouble();
+            numArray[counter] = values;
+            counter++;
+            if(counter == 20)
+            {
+                quit = false;
+            }
+            else if(values == 99999)
+            {
+                quit = false;
+            }
+            else{
+               numArray[counter] = values;
+                total = total + values;
+            }
+            counter++;
         }
-        else
+        avg = total/counter;
+        for(int i = 0; i<counter; ++i)
         {
-            System.out.println("INVALID VALUE!");
+            difference = numArray[i] - avg;
+            System.out.println("The average was " + avg + "\nFirst entry was " + numArray[i] +
+            "\n The difference was" + abs(difference) + "Total Count " + counter);
         }
 
     }
