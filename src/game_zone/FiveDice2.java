@@ -9,31 +9,71 @@ public class FiveDice2 {
 
         int[] userDieRolls = new int [5];
         int[] compDieRolls = new int [5];
-        int userTotal = 0;
 
-        for(int i = 0; i < 5; ++i)
-        {
-            int compDie = rand.nextInt(6)+1;
+        for(int i = 0; i < 5; ++i) {
+            int compDie = rand.nextInt(6) + 1;
             compDieRolls[i] = compDie;
 
-            int userDie = rand.nextInt(6)+1;
+            int userDie = rand.nextInt(6) + 1;
             userDieRolls[i] = userDie;
 
-            userTotal = userTotal + userDieRolls[i];
         }
-        System.out.print("You rolled " + userDieRolls[0] + userDieRolls[1] + userDieRolls[2] + userDieRolls[3]
-                + userDieRolls[4]);
-        System.out.print("\nComputer rolled " + compDieRolls[0] + compDieRolls[1] + compDieRolls[2] + compDieRolls[3]
-                + compDieRolls[4]);
 
-      result(userDieRolls,compDieRolls,userTotal);
+        int compMatch;
+        int userMatch;
+        String computerName = "Computer";
+        String userName = "You";
+        result(computerName, compDieRolls, 5);
+        result(userName, userDieRolls, 5);
+        compMatch = ofAKind(compDieRolls, 5);
+       userMatch = ofAKind(userDieRolls, 5);
+        if(compMatch == 1)
+            System.out.println("Computer has nothing");
+        else
+            System.out.println("Computer has " + compMatch + " of a kind");
+        if(userMatch == 1)
+            System.out.println("You have nothing");
+        else
+            System.out.println("You have " + userMatch + " of a kind");
+        if(compMatch > userMatch)
+            System.out.println("Computer wins");
+        else
+        if(compMatch < userMatch)
+            System.out.println("You win");
+        else
+            System.out.println("It's a tie");
+
     }
-    public static void result(int[]userDieRolls, int[] compDieRolls, int userTotal)
+    public static void result(String who, int[] die, int dieRolls)
     {
-        if(userTotal % 5 == 0)
-        {
-            System.out.println("You have 5 of a kind.");
+        int x;
+        String dice = "";
+        for(x = 0; x < dieRolls; ++x){
+            dice = dice + die[x] + " ";
         }
-        else if (userDieRolls[0] == userDieRolls[1] == userDieRolls[2])
+        System.out.println(who + " rolled: " + dice);
     }
-}
+    public static int ofAKind(int[] die, int num)
+    {
+        int[] same = new int[num];
+        int x, y;
+        int highest;
+        for(x = 0; x < num; ++x)
+            same[x] = 1;
+        for(x = 0; x < num - 1; ++x)
+        {
+            for(y = x + 1; y < num; ++y)
+                if(die[x] == die[y])
+                {
+                    same[x]++;
+                }
+        }
+        highest = same[0];
+        for(x = 1; x < num; ++x)
+            if(same[x] > highest)
+                highest = same[x];
+        return highest;
+    }
+
+    }
+
