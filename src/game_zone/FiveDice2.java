@@ -27,31 +27,38 @@ public class FiveDice2 {
         result(userName, userDieRolls, 5);
         compMatch = ofAKind(compDieRolls, 5);
        userMatch = ofAKind(userDieRolls, 5);
-        if(compMatch == 1)
+        if(compMatch == 1){
             System.out.println("Computer has nothing");
+            }
         else
+        {
             System.out.println("Computer has " + compMatch + " of a kind");
-        if(userMatch == 1)
+        }
+        if(userMatch == 1) {
             System.out.println("You have nothing");
-        else
-            System.out.println("You have " + userMatch + " of a kind");
-        if(compMatch > userMatch)
+        }
+        else{
+            System.out.println("You have " + userMatch + " of a kind");}
+        if(compMatch > userMatch){
             System.out.println("Computer wins");
+        }
         else
-        if(compMatch < userMatch)
+        if(compMatch < userMatch){
             System.out.println("You win");
-        else
+        }
+        else{
             System.out.println("It's a tie");
+        }
 
     }
-    public static void result(String who, int[] die, int dieRolls)
+    public static void result(String name, int[] die, int dieRolls)
     {
         int x;
         String dice = "";
         for(x = 0; x < dieRolls; ++x){
             dice = dice + die[x] + " ";
         }
-        System.out.println(who + " rolled: " + dice);
+        System.out.println(name + " rolled: " + dice);
     }
     public static int ofAKind(int[] die, int num)
     {

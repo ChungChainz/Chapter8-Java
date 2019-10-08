@@ -23,26 +23,26 @@
       <file leaf-file-name="Quiz.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game_zone/Quiz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="68">
               <caret line="18" column="71" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FiveDice2.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FiveDice2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game_zone/FiveDice2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="53" lean-forward="true" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+            <state relative-caret-position="850">
+              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FixDebugEight3.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FixDebugEight3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/debugging/FixDebugEight3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state relative-caret-position="363">
+              <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -105,11 +105,11 @@
         <option value="$PROJECT_DIR$/src/exercises/ArrayMethodDemo.java" />
         <option value="$PROJECT_DIR$/src/exercises/DistanceFromAverage.java" />
         <option value="$PROJECT_DIR$/src/game_zone/Quiz.java" />
-        <option value="$PROJECT_DIR$/src/game_zone/FiveDice2.java" />
         <option value="$PROJECT_DIR$/src/debugging/FixDebugEight1.java" />
         <option value="$PROJECT_DIR$/src/debugging/FixDebugEight2.java" />
         <option value="$PROJECT_DIR$/src/debugging/FixDebugEight4.java" />
         <option value="$PROJECT_DIR$/src/debugging/FixDebugEight3.java" />
+        <option value="$PROJECT_DIR$/src/game_zone/FiveDice2.java" />
       </list>
     </option>
   </component>
@@ -165,8 +165,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,7 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FixDebugEight3">
+  <component name="RunManager" selected="Application.FiveDice2">
     <configuration name="FiveDice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="game_zone.FiveDice2" />
       <module name="Chapter8-Java" />
@@ -290,11 +290,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FiveDice2" />
         <item itemvalue="Application.FixDebugEight3" />
         <item itemvalue="Application.FixDebugEight4" />
         <item itemvalue="Application.FixDebugEight2" />
         <item itemvalue="Application.FixDebugEight1" />
-        <item itemvalue="Application.FiveDice2" />
       </list>
     </recent_temporary>
   </component>
@@ -608,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game_zone/Quiz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="71" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/exercises/ArrayMethodDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
@@ -639,13 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game_zone/FiveDice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/debugging/FixDebugEight1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -657,13 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game_zone/FiveDice2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="53" lean-forward="true" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -688,10 +667,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/game_zone/Quiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="71" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/debugging/FixDebugEight3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+        <state relative-caret-position="363">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game_zone/FiveDice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game_zone/FiveDice2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
         </state>
       </provider>
     </entry>
